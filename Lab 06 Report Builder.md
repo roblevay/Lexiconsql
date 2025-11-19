@@ -184,7 +184,7 @@ ORDER BY
 
 5. Click **Run**.
 
-6. In the parameter box at the top, enter a year (e.g. `2007`) and click **View Report**.
+6. In the parameter box at the top, enter a year (e.g. `2014`) and click **View Report**.
 
 Now the report is **interactive** and filtered by a chosen year.
 
