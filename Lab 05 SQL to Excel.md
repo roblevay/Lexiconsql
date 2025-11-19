@@ -81,17 +81,14 @@ If you prefer a specific dataset:
 
 2. Paste your own SQL query, for example:
 
-   ```sql
-   SELECT TOP 100 
-       d.CalendarYear,
-       p.EnglishProductCategoryName,
-       SUM(f.SalesAmount) AS TotalSales
-   FROM FactInternetSales f
-   JOIN DimDate d ON f.OrderDateKey = d.DateKey
-   JOIN DimProduct p ON f.ProductKey = p.ProductKey
-   GROUP BY d.CalendarYear, p.EnglishProductCategoryName
-   ORDER BY d.CalendarYear;
-   ```
+```sql
+SELECT TOP 100
+    f.ProductKey,
+    SUM(f.SalesAmount) AS TotalSales
+FROM FactInternetSales f
+GROUP BY f.ProductKey
+ORDER BY TotalSales DESC;
+```
 
 3. Click **OK → Load** to bring the summarized data into Excel directly.
 
