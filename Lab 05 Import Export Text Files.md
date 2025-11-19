@@ -125,6 +125,7 @@ Export is done!
 In SSMS, run the following against AdventureWorks:
 
 ```sql
+DROP TABLE IF EXISTS  dbo.ImportedEmployees
 CREATE TABLE dbo.ImportedEmployees
 (
     BusinessEntityID INT,
