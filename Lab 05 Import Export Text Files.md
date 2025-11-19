@@ -1,4 +1,4 @@
-## Exercise X: Importing and Exporting Data from Text Files
+## Exercise: Importing and Exporting Data from Text Files
 
 *(using the `vEmployee` view in AdventureWorks)*
 
