@@ -72,6 +72,7 @@ This illustrates **“Transforming and cleaning data”** using tools that are e
 1. In **SSMS**, run the following script to create a target table:
 
    ```sql
+   DROP TABLE IF EXISTS AdventureWorks.dbo.PersonCleanWizard
    CREATE TABLE AdventureWorks.dbo.PersonCleanWizard
    (
        BusinessEntityID INT         NOT NULL,
