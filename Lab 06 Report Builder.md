@@ -15,7 +15,7 @@ This illustrates **“Designing reports quickly with the Report Builder”** usi
 
 1. Start **Report Builder** in one of these ways:
 
-   * From the Windows **Start menu** → search for **Report Builder**
+   * From the Windows **Start menu** → search for **Microsoft Report Builder**
    * Or from the **Reporting Services web portal** (e.g. `http://localhost/Reports`) and click **Report Builder**.
 2. If prompted for a **Report Server** when saving later, use your local report server URL (for example `http://localhost/ReportServer`), or save to **This PC** for a file-based demo.
 
