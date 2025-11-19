@@ -157,7 +157,7 @@ If you want to show how quickly you can add interactivity:
 
 3. Edit the query to filter by year:
 
-   ```sql
+```sql
 SELECT 
     d.CalendarYear,
     pc.EnglishProductCategoryName AS ProductCategory,
@@ -178,7 +178,7 @@ GROUP BY
 ORDER BY 
     d.CalendarYear,
     pc.EnglishProductCategoryName;
-   ```
+```
 
 4. Click **OK** – Report Builder will automatically create a **@Year** parameter.
 
