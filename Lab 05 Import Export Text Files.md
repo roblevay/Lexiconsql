@@ -216,6 +216,3 @@ This shows exactly how SQL Server handles:
 
 ---
 
-Vill du fortsätta till nästa övning?
-
-➡️ **Migrating an Access database to SQL Server**
