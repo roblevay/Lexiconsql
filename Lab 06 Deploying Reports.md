@@ -1,93 +1,85 @@
-## Exercise: Deploying Reports for Centralised Access
+## Exercise: Deploying Reports for Centralised Access (via Web Portal Upload)
 
 In this exercise, you will:
 
-* Take an existing report created in **Report Builder**
-* Deploy (save) it to a **central report server**
-* Verify that it can be opened from a **web portal** so that other users can access it
+* Save a **Report Builder** report as an `.rdl` file on disk
+* Upload the report to the **SSRS web portal**
+* Run the report in a browser so it is available to other users
 
-This illustrates **“Deploying reports for centralised access”**.
+This illustrates **“Deploying reports for centralised access”** in the simplest possible way.
 
 ---
 
-### Preparation: Have a report ready
+### Preparation: Have a report ready in Report Builder
 
 1. Open **Report Builder**.
 2. Open the report you created earlier, for example:
-   `Internet Sales by Year and Category` created in the lab **Lab 06 Report Builder.md**.
+   `Internet Sales by Year and Category`.
 
-(If you don’t have one, create a quick table report first using your `AdventureWorksDW` data source.)
-
----
-
-### Step 1: Identify your Report Server URL
-
-You need the URL to your **SSRS Report Server**, for example:
-
-* `http://localhost/ReportServer` (server endpoint)
-* `http://localhost/Reports` (web portal)
-
-If you don’t know it:
-
-1. Ask your administrator, **or**
-2. In a browser, try:
-
-   * `http://localhost/Reports`
-   * `http://localhost/ReportServer`
-
-If a SQL Server Reporting Services page appears, you’re on the right track.
+(If you don’t have one, create a quick table report against `AdventureWorksDW` first or do the exercise Lab 06 Report Builder)
 
 ---
 
-### Step 2: Save (deploy) the report to the Report Server
+### Step 1: Save the report as an .rdl file on disk
 
 1. In **Report Builder**, click **File → Save As**.
-2. Choose **Recent Sites and Servers** or **Browse** (wording may vary).
-3. If your report server is not listed:
+2. Choose **This PC** (or a local folder/location).
+3. Browse to a folder, for example: `C:\Reports`.
+4. In the **Name** box, enter a clear name, for example:
+   `InternetSalesByYearAndCategory.rdl`
+5. Click **Save**.
 
-   * Click **Add** or type the URL to your report server, e.g.:
-     `http://localhost/ReportServer`
-   * Press Enter or click **Open**.
-4. You should now see folders on the report server (for example **/**, **BI Demos**, etc.).
-5. Choose a folder where you want to deploy the report, for example:
-
-   * Create a new folder **BI_Demos** (if allowed)
-   * Or use an existing folder such as **Reports**.
-6. In the **Name** box, type a clear name, for example:
-   `Internet Sales by Year and Category`.
-7. Click **Save**.
-
-The report is now **deployed** to the report server.
+You now have a report file (`.rdl`) saved locally.
 
 ---
 
-### Step 3: Access the report from the Web Portal
+### Step 2: Open the SSRS Web Portal
 
-1. Open a web browser.
-2. Navigate to the **report portal URL**, for example:
+1. Open a **web browser**.
+2. Navigate to your SSRS web portal, for example:
    `http://localhost/Reports`
-3. Browse to the folder where you saved the report (e.g. **BI_Demos**).
-4. Click on the report name, for example:
-   `Internet Sales by Year and Category`.
-5. The report runs in the browser, using the central report server.
-
-If the report has parameters, you can change them and click **View Report**.
+3. You should see the **Reporting Services** web portal with folders and items.
 
 ---
 
-### Step 4: Explain “centralised access” to the class
+### Step 3: Upload the report to the report server
+
+1. In the web portal (`http://localhost/Reports`), navigate to the folder where you want to store the report, for example:
+
+   * Create a new folder **BI_Demos**, or
+   * Use an existing folder such as **Reports**.
+2. Click the **Upload** button (usually at the top).
+3. In the file selection dialog:
+
+   * Browse to `C:\Reports`.
+   * Select `InternetSalesByYearAndCategory.rdl`.
+   * Click **Open**.
+4. The report now appears in the folder list in the web portal.
+
+The report is now **deployed to the report server** and stored centrally.
+
+---
+
+### Step 4: Run the report from the web portal
+
+1. In the web portal, click on the report name, for example:
+   `InternetSalesByYearAndCategory`.
+2. The report opens and runs in the browser.
+3. If the report has parameters, enter values and click **View Report**.
+
+Any user with access to this report server and folder can now open the same report from their browser.
+
+---
+
+### How to explain “centralised access” in class
 
 When the report is visible in the browser, you can say something like:
 
-> “Now this report is deployed to the **report server**.
-> That means other users can open a browser, go to the report portal,
-> and run the report without needing Report Builder or direct access to the database.
-> All security, data connections and layouts are managed centrally.”
-
-If you have multiple users and permissions configured, you can mention that:
-
-* Access can be controlled via **folders and roles** in SSRS.
-* Users only need a **browser and the URL**.
+> “We designed this report in Report Builder, saved it as an `.rdl` file
+> and uploaded it to the **report server**.
+> Now the report is available centrally via the web portal – users only need
+> a browser and permission to this folder. They do not need Report Builder
+> or direct access to the database.”
 
 ---
 
@@ -95,14 +87,10 @@ If you have multiple users and permissions configured, you can mention that:
 
 By completing this exercise, you have:
 
-* Saved (deployed) a **Report Builder** report to a **central SSRS report server**
-* Opened and run the report via a **web portal**
-* Enabled **centralised access** so that multiple users can reach the same report in one place
+* Taken a **local Report Builder report** (`.rdl`)
+* Deployed it to a **central SSRS report server** via the web portal
+* Verified that it can be run by users through a **browser**
 
-This is exactly:
+This is a simple, practical example of:
 
-**Deploying reports for centralised access**
-in a SQL Server Reporting Services environment.
-
----
-
+**Deploying reports for centralised access.**
