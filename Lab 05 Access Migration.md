@@ -1,14 +1,4 @@
-Perfekt — då bygger vi en **superenkel och tydlig övning**
-i samma layout som tidigare, baserad på:
-
-**Migrating an Access database to SQL Server**
-med **SQL Server Migration Assistant (SSMA) for Access**.
-
-Det här blir precis lagom för kursdeltagare.
-
----
-
-# Exercise X: Migrating an Access Database to SQL Server
+# Exercise: Migrating an Access Database to SQL Server
 
 *(using SQL Server Migration Assistant for Access — SSMA)*
 
