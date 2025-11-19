@@ -154,4 +154,8 @@ This is a full demonstration of:
 
 **Migrating an Access database to SQL Server.**
 
+När SSMA migrerar tabeller skapar den automatiskt en extra kolumn
+som heter SSMA_TimeStamp. Den behövs bara för Access-synkning och
+parallella uppdateringar. I SQL Server kan vi tryggt ta bort den.
+
 
