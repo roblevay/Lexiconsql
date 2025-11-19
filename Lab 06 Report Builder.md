@@ -83,8 +83,6 @@ ORDER BY
     pc.EnglishProductCategoryName;
 ```
 
-   ```
-
 3. Click **Run** (the exclamation mark) to test the query.
 
 4. If you see rows of data, click **OK** to return to the wizard.
