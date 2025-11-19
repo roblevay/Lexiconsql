@@ -14,7 +14,7 @@ This illustrates **“Deploying reports for centralised access”**.
 
 1. Open **Report Builder**.
 2. Open the report you created earlier, for example:
-   `Internet Sales by Year and Category`.
+   `Internet Sales by Year and Category` created in the lab **Lab 06 Report Builder.md**.
 
 (If you don’t have one, create a quick table report first using your `AdventureWorksDW` data source.)
 
