@@ -31,6 +31,7 @@ into a new table in `AdventureWorksDW`.
 3. Run the following script:
 
 ```sql
+DROP TABLE IF EXISTS AdventureWorksDW.dbo.DimPersonDemo
 CREATE TABLE AdventureWorksDW.dbo.DimPersonDemo
 (
     PersonKey         INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
