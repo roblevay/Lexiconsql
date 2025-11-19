@@ -49,7 +49,7 @@ This illustrates **“Designing reports quickly with the Report Builder”** usi
    * Click **Test Connection** to verify.
    * Click **OK**, then **OK** again.
 
-You now have a data source pointing to your **data warehouse**.
+You now have a data source pointing to your **data warehouse**. Click **Next**
 
 ---
 
@@ -57,39 +57,38 @@ You now have a data source pointing to your **data warehouse**.
 
 We will create a simple query summarising Internet Sales by **CalendarYear** and **Product Category**.
 
-1. Back on the dataset page, click **Query Designer…**.
+1. Switch to **Text** mode if needed (button **Edit as Text**).
 
-2. Switch to **Text** mode if needed (button **Edit as Text**).
-
-3. Paste the following query:
+2. Paste the following query:
 
    ```sql
-   SELECT 
-       d.CalendarYear,
-       p.EnglishProductCategoryName AS ProductCategory,
-       SUM(f.SalesAmount)          AS TotalSales
-   FROM FactInternetSales f
-   JOIN DimDate d
-       ON f.OrderDateKey = d.DateKey
-   JOIN DimProduct p
-       ON f.ProductKey = p.ProductKey
-   JOIN DimProductSubcategory ps
-       ON p.ProductSubcategoryKey = ps.ProductSubcategoryKey
-   JOIN DimProductCategory pc
-       ON ps.ProductCategoryKey = pc.ProductCategoryKey
-   GROUP BY 
-       d.CalendarYear,
-       p.EnglishProductCategoryName
-   ORDER BY 
-       d.CalendarYear,
-       p.EnglishProductCategoryName;
+SELECT 
+    d.CalendarYear,
+    pc.EnglishProductCategoryName AS ProductCategory,
+    SUM(f.SalesAmount)           AS TotalSales
+FROM FactInternetSales f
+JOIN DimDate d
+    ON f.OrderDateKey = d.DateKey
+JOIN DimProduct p
+    ON f.ProductKey = p.ProductKey
+JOIN DimProductSubcategory ps
+    ON p.ProductSubcategoryKey = ps.ProductSubcategoryKey
+JOIN DimProductCategory pc
+    ON ps.ProductCategoryKey = pc.ProductCategoryKey
+GROUP BY 
+    d.CalendarYear,
+    pc.EnglishProductCategoryName
+ORDER BY 
+    d.CalendarYear,
+    pc.EnglishProductCategoryName;
+
    ```
 
-4. Click **Run** (the exclamation mark) to test the query.
+3. Click **Run** (the exclamation mark) to test the query.
 
-5. If you see rows of data, click **OK** to return to the wizard.
+4. If you see rows of data, click **OK** to return to the wizard.
 
-6. Click **Next**.
+5. Click **Next**.
 
 You now have a dataset ready for a quick report.
 
