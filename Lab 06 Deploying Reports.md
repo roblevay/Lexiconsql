@@ -1,5 +1,3 @@
----
-
 ## Exercise: Deploying Reports for Centralised Access
 
 In this exercise, you will:
