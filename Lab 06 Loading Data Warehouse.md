@@ -36,9 +36,10 @@ CREATE TABLE AdventureWorksDW.dbo.DimPersonDemo
 (
     PersonKey         INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
     BusinessEntityID  INT               NOT NULL,
-    FirstName         VARCHAR(50)       NOT NULL,
-    LastName          VARCHAR(50)       NOT NULL
+    FirstName         NVARCHAR(50)       NOT NULL,
+    LastName          NVARCHAR(50)       NOT NULL
 );
+
 ```
 
 > `PersonKey` is a simple **surrogate key** for the data warehouse table.
