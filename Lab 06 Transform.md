@@ -1,6 +1,5 @@
----
 
-## Exercise X: Transforming and Cleaning Data with the Import and Export Data Wizard
+## Exercise : Transforming and Cleaning Data with the Import and Export Data Wizard
 
 In this exercise, you will:
 
