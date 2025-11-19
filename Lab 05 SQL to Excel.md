@@ -41,6 +41,7 @@ You need:
    * Choose **Windows** (if logged in as a valid SQL user)
    * Or **Database** and enter your SQL credentials.
    * Click **Connect**.
+   * If prompted about encryption, click **OK**
 
 ---
 
