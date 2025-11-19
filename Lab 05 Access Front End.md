@@ -1,4 +1,4 @@
-## Exercise X: Creating a Front-End Interface with Microsoft Access
+## Exercise: Creating a Front-End Interface with Microsoft Access
 
 In this exercise, you will:
 
