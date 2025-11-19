@@ -53,7 +53,7 @@ You now have an empty Access database ready to connect.
 6. In the ODBC setup:
 
    * Data source name: `AdventureWorksDS`
-   * Server: your SQL Server (e.g. `localhost`)
+   * Server: your SQL Server (e.g. `North`)
    * Next
    * Authentication: Windows or SQL Login
    * Next
@@ -76,7 +76,7 @@ Access will now create **linked tables** with a little globe icon, meaning the d
 
 ## Step 3: Create a simple front-end form
 
-1. In the **Navigation Pane**, click on the linked table `Person`.
+1. In the **Navigation Pane**, double.click on the linked table `Person`.
 2. In the ribbon, click **Create → Form**.
 
 Access automatically generates a full CRUD form:
@@ -92,7 +92,7 @@ This is the simplest possible "front-end interface".
 
 ## Step 4: Improve the form (optional but recommended)
 
-1. With the form open, click **Layout View** or **Design View**.
+1. With the form open, from **View**, click **Layout View** or **Design View**.
 2. In the **Property Sheet**, you can:
 
    * Change the title (e.g. *“Person Browser”*)
@@ -125,19 +125,6 @@ SELECT TOP 20 * FROM Person.Person ORDER BY BusinessEntityID DESC;
 
 You will see the changes made in Access reflected in SQL Server instantly.
 
----
-
-## Step 6: Explain the concept to students
-
-When showing this, you can say:
-
-> “Access can act as a **front-end application** on top of SQL Server.
-> The data stays in SQL Server, while Access gives users an easy interface
-> for browsing, searching, and editing data — without writing any code.”
-
-This is extremely useful for small teams or administrative users.
-
----
 
 ## What This Exercise Demonstrates
 
@@ -152,10 +139,4 @@ This is exactly what is meant by:
 
 **Creating a front-end interface with Access.**
 
----
 
-Vill du ha nästa också?
-
-➡️ **• Importing and exporting data from text files**
-eller
-➡️ **• Migrating an Access database to SQL Server**
