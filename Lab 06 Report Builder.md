@@ -61,7 +61,7 @@ We will create a simple query summarising Internet Sales by **CalendarYear** and
 
 2. Paste the following query:
 
-   ```sql
+```sql
 SELECT 
     d.CalendarYear,
     pc.EnglishProductCategoryName AS ProductCategory,
@@ -81,6 +81,7 @@ GROUP BY
 ORDER BY 
     d.CalendarYear,
     pc.EnglishProductCategoryName;
+```
 
    ```
 
