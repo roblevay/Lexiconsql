@@ -158,26 +158,26 @@ If you want to show how quickly you can add interactivity:
 3. Edit the query to filter by year:
 
    ```sql
-   SELECT 
-       d.CalendarYear,
-       p.EnglishProductCategoryName AS ProductCategory,
-       SUM(f.SalesAmount)          AS TotalSales
-   FROM FactInternetSales f
-   JOIN DimDate d
-       ON f.OrderDateKey = d.DateKey
-   JOIN DimProduct p
-       ON f.ProductKey = p.ProductKey
-   JOIN DimProductSubcategory ps
-       ON p.ProductSubcategoryKey = ps.ProductSubcategoryKey
-   JOIN DimProductCategory pc
-       ON ps.ProductCategoryKey = pc.ProductCategoryKey
-   WHERE d.CalendarYear = @Year
-   GROUP BY 
-       d.CalendarYear,
-       p.EnglishProductCategoryName
-   ORDER BY 
-       d.CalendarYear,
-       p.EnglishProductCategoryName;
+SELECT 
+    d.CalendarYear,
+    pc.EnglishProductCategoryName AS ProductCategory,
+    SUM(f.SalesAmount)           AS TotalSales
+FROM FactInternetSales f
+JOIN DimDate d
+    ON f.OrderDateKey = d.DateKey
+JOIN DimProduct p
+    ON f.ProductKey = p.ProductKey
+JOIN DimProductSubcategory ps
+    ON p.ProductSubcategoryKey = ps.ProductSubcategoryKey
+JOIN DimProductCategory pc
+    ON ps.ProductCategoryKey = pc.ProductCategoryKey
+WHERE d.CalendarYear=@CalendarYear
+GROUP BY 
+    d.CalendarYear,
+    pc.EnglishProductCategoryName
+ORDER BY 
+    d.CalendarYear,
+    pc.EnglishProductCategoryName;
    ```
 
 4. Click **OK** – Report Builder will automatically create a **@Year** parameter.
