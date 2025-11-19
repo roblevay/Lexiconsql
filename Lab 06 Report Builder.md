@@ -117,7 +117,7 @@ You now have a dataset ready for a quick report.
    * Select any style you like (e.g. **Corporate**, **Generic**).
 4. Click **Finish**.
 
-Report Builder generates a table report design based on your choices.
+Report Builder generates a table report design based on your choices. You may have to look for the report in the Task Bar.
 
 ---
 
