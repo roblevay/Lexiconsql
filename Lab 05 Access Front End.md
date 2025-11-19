@@ -25,7 +25,7 @@ For this exercise, we will use the `Person.Person` table from **AdventureWorks**
 
 ## Step 1: Create a new Access front-end database
 
-1. Start **Microsoft Access** by right-clicking the **Access** shortcut and select **Run as Administrator**.
+1. Start **Microsoft Access** by right-clicking the **Access** shortcut and select **More** and then  **Run as Administrator**.
 2. Choose **Blank Database**.
 3. Save the file somewhere, for example:
    `C:\AccessFrontEnd\AdventureWorksFrontEnd.accdb`.
