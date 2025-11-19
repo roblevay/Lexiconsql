@@ -92,17 +92,7 @@ ORDER BY TotalSales DESC;
 
 3. Click **OK → Load** to bring the summarized data into Excel directly.
 
----
 
-### Step 5: Explain the concept
-
-When showing this in class, you can say:
-
-> “Excel can connect directly to a SQL Server database.
-> This means we can work with live data — not exported files.
-> When the database updates, we simply click *Refresh All* to see the latest results.”
-
----
 
 ### What This Exercise Demonstrates
 
