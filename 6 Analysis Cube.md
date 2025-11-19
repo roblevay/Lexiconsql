@@ -2,17 +2,6 @@
 
 # Enkel demo av SQL Server Analysis Services (Multidimensional) med AdventureWorksDW
 
-Den här guiden visar **steg för steg** hur du skapar en **mycket enkel OLAP-kub** i
-SQL Server Analysis Services (SSAS Multidimensional) baserad på databasen `AdventureWorksDW`.
-
-Målet är att kunna demonstrera:
-
-* Hur vi bygger en **kub** ovanpå ett data warehouse
-* Hur kuben **aggregerar data** (t.ex. försäljning per datum och per år)
-* Hur man **drillar** ned i data från år → datum
-
-Guiden utgår från det vi faktiskt gjorde i demon.
-
 ---
 
 ## Förutsättningar
