@@ -46,9 +46,7 @@ CREATE TABLE training.TestTable
 
 6. Expand **AdventureWorks → Tables** and verify that the table appears under `training`.
 
-````
 
----
 
 # 📄 **Module 2 — Part 2: Defining Tables**  
 *(Data types, Indexing, Altering columns)*
