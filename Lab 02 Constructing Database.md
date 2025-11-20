@@ -35,6 +35,7 @@
 5. Create a new table in this schema:
 
 ```sql
+USE TrainingDB
 CREATE TABLE training.TestTable
 (
     ID INT,
