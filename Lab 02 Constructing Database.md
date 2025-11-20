@@ -42,7 +42,7 @@ CREATE TABLE training.TestTable
     ID INT,
     Note VARCHAR(50)
 );
-````
+```
 
 6. Expand **AdventureWorks → Tables** and verify that the table appears under `training`.
 
