@@ -5,30 +5,28 @@
 
 # Module 2 — Constructing a Relational Database
 
-## Preparation
-These exercises use the **AdventureWorks** database in SQL Server.
 
 ---
 
 ## Exercise 1: Choosing Optimal File Size and Growth Settings
 
 1. Open **SQL Server Management Studio (SSMS)**.
-2. Right-click the **AdventureWorks** database.
-3. Select **Properties**.
-4. In the **Files** page, examine:
-   - Initial size (MB)
-   - Autogrowth settings
+2. Right-click **Databases** and select **New Database**
+3. Type the database name **TrainingDB** 
+4. In the **Files** page, type the following values:
+   - Initial database size (MB)   **1000 MB**
+   - Intitial Log File Size (MB) **200 MB**
 5. Change the autogrowth settings:
    - For the **data file**: set autogrowth to **64 MB**.
    - For the **log file**: set autogrowth to **32 MB**.
 6. Click **OK**.
-7. Verify the changes by opening the **Files** page again.
+8. Verify the changes by opening the **Files** page again.
 
 ---
 
 ## Exercise 2: Working with Database Schemas
 
-1. In SSMS, expand **AdventureWorks → Security → Schemas**.
+1. In SSMS, expand **TrainingDB → Security → Schemas**.
 2. Right-click **Schemas** → choose **New Schema…**.
 3. Enter:
    - Name: `training`
@@ -192,4 +190,9 @@ REFERENCES dbo.TrainingDepartments(DepartmentID);
 ```
 
 3. Try inserting a row with an invalid DepartmentID and confirm that SQL Server blocks it.
+
+```sql
+INSERT INTO dbo.TrainingEmployees
+VALUES (1, 'Eva', 'Sun', '1980-01-01', -100);
+```
 
