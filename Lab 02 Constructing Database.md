@@ -124,13 +124,13 @@ DROP COLUMN Email;
 # 📄 **Module 2 — Part 3: Safeguarding Data with Constraints**  
 *(Primary keys, Check constraints, Foreign keys)*
 
-```markdown
+
 # Module 2 — Safeguarding Data with Constraints
 
 ## Preparation
 These exercises build on your training tables.
 
----
+
 
 ## Exercise 6: Enforcing Uniqueness with Primary Keys
 
