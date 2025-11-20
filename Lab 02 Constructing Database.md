@@ -2,7 +2,7 @@
 
 *(Choosing file size & growth, Working with schemas)*
 
-````markdown
+
 # Module 2 — Constructing a Relational Database
 
 ## Preparation
