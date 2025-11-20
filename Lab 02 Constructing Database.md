@@ -81,13 +81,14 @@ CREATE TABLE dbo.TrainingEmployees
 
 1. Right-click **dbo.TrainingEmployees** → **Design**.
 2. Select **EmployeeID**.
-3. In the **Indexes/Keys** window:
+3. Right-click **EmployeeID** and select **Indexes/Keys**
+4. In the **Indexes/Keys** window:
 
    * Click **Add**.
    * Set **Type** to *Nonclustered*.
    * Name it: `IX_TrainingEmployees_EmployeeID`.
-4. Click **OK** and save the table.
-5. Expand **Indexes** under the table to verify the new index.
+5. Click **OK** and save the table by clicking on the diskette symbol.
+6. Expand **Indexes** under the table to verify the new index.
 
 ---
 
