@@ -113,52 +113,70 @@ SELECT @@VERSION AS SQLServerVersion;
 
 ---
 
-# Part 3 — Exploring the BI Stack Components
+# Part 3 — Using Management Studio to Create Projects
 
-## Exercise 8: Check for Integration Services (SSIS)
+## Exercise 8: Create a New SQL Server Project
 
-1. Open **Services** in Windows.
-2. Look for:
+1. In SSMS, open the **View** menu.
+2. Select **Solution Explorer**.
+3. Click **New Project** in the Solution Explorer window.
+4. Choose:
+   - Project type: **SQL Server Scripts**
+   - Name: `Module1Project`
+5. Choose a location (e.g. `C:\Sqlinstall\Projects`) and click **OK**.
+
+---
+
+## Exercise 9: Add a New Query File to the Project
+
+1. In Solution Explorer, right-click the project.
+2. Select **Add → New Item…**
+3. Choose **Query**.
+4. Name it:
    ```
-   SQL Server Integration Services 15.0
+   CheckVersion.sql
+   ```
+5. Click **Add**.
+6. In the new query window, run:
+   ```sql
+   SELECT @@SERVERNAME, @@VERSION;
    ```
 
 ---
 
-## Exercise 9: Check for Analysis Services (SSAS)
+## Exercise 10: Create a Folder Structure for Scripts
 
-1. Reopen the **Installed SQL Server features discovery report**.
-
----
-
-## Exercise 10: Check for Reporting Services (SSRS)
-
-1. Open **Apps & Features** → search for Reporting Services.
-
----
-
-## Exercise 11: Check for Data Quality Services (DQS)
-
-1. In SSMS, expand the `master` database → **Tables**.
-2. Look for tables starting with `DQS`.
-
----
-
-## Exercise 12: Check for Master Data Services (MDS)
-
-1. Browse to:
+1. In Solution Explorer, right-click your project.
+2. Select **Add → New Folder**.
+3. Name the folder:
    ```
-   C:\Program Files\Microsoft SQL Server\
+   Administration
    ```
-2. Look for an **MDS** folder.
+4. Create another folder:
+   ```
+   Queries
+   ```
+5. Drag your .sql file into the **Queries** folder.
 
 ---
 
-# Part 4 — Summary Activity
+## Exercise 11: Add a Connection Profile to the Project
 
-## Exercise 13: Document What You Found
+1. In Solution Explorer, right-click **Connections**.
+2. Select **Add New Connection**.
+3. Set:
+   - Server name: `North`
+   - Authentication: Windows Authentication
+4. Test the connection and click **OK**.
 
-Create a summary file and save it as:
-```
-C:\Sqlinstall\Module1_DiscoveryNotes.txt
-```
+---
+
+## Exercise 12: Execute a Project Script
+
+1. In Solution Explorer, open `CheckVersion.sql`.
+2. Ensure the connection selector shows the `North` server.
+3. Click **Execute**.
+4. Confirm that results appear in the Results window.
+
+
+
