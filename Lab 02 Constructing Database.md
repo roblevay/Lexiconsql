@@ -117,9 +117,8 @@ DROP COLUMN Email;
 
 4. Right-click the table → **Refresh** and confirm the change.
 
-````
 
----
+
 
 # 📄 **Module 2 — Part 3: Safeguarding Data with Constraints**  
 *(Primary keys, Check constraints, Foreign keys)*
@@ -141,7 +140,7 @@ These exercises build on your training tables.
 ALTER TABLE dbo.TrainingEmployees
 ADD CONSTRAINT PK_TrainingEmployees
 PRIMARY KEY (EmployeeID);
-````
+```
 
 3. Expand **Keys** under the table to verify the PK.
 
