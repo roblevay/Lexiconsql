@@ -64,7 +64,7 @@ These exercises use a new table named **TrainingEmployees**.
 ```sql
 CREATE TABLE dbo.TrainingEmployees
 (
-    EmployeeID INT,
+    EmployeeID INT NOT NULL,
     FirstName  VARCHAR(50),
     LastName   VARCHAR(50),
     BirthDate  DATE,
