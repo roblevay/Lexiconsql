@@ -53,8 +53,6 @@ CREATE TABLE training.TestTable
 # 📄 **Module 2 — Part 2: Defining Tables**  
 *(Data types, Indexing, Altering columns)*
 
-```markdown
-# Module 2 — Defining Tables
 
 ## Preparation
 These exercises use a new table named **TrainingEmployees**.
@@ -75,7 +73,7 @@ CREATE TABLE dbo.TrainingEmployees
     BirthDate  DATE,
     Salary     DECIMAL(10,2)
 );
-````
+```
 
 3. Execute the script.
 4. Right-click the table → **Design** and confirm that each column uses the correct type.
