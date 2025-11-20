@@ -195,6 +195,6 @@ REFERENCES dbo.TrainingDepartments(DepartmentID);
 
 ```sql
 INSERT INTO dbo.TrainingEmployees
-VALUES (1, 'Eva', 'Sun', '1980-01-01', -100);
+VALUES (1, 'Eva', 'Sun', '1980-01-01', -100,1);
 ```
 
