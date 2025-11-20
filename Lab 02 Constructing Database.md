@@ -1,21 +1,3 @@
-Perfekt — **alternativ C** betyder att jag skapar **en md-fil per sektion** enligt strukturen i din bifogade fil.
-Alltså tre filer:
-
-1. **Constructing a relational database**
-   (med övningarna: file size/growth + schemas)
-
-2. **Defining tables**
-   (med övningarna: data types + indexing + altering columns)
-
-3. **Safeguarding data with constraints**
-   (med övningarna: primary key + check + foreign key)
-
-Varje fil följer **exakt layouten** från din *Lab 05 Access Front End.md*.
-
-Här kommer de tre filerna — redo att copy-paste eller spara.
-
----
-
 # 📄 **Module 2 — Part 1: Constructing a Relational Database**
 
 *(Choosing file size & growth, Working with schemas)*
@@ -216,13 +198,3 @@ REFERENCES dbo.TrainingDepartments(DepartmentID);
 
 3. Try inserting a row with an invalid DepartmentID and confirm that SQL Server blocks it.
 
-```
-
----
-
-Vill du nu att jag också:
-
-✅ gör **Module 3**, **Module 4**, **Module 5**, **Module 6** i samma format?  
-Eller  
-✅ ska jag slå ihop dessa tre filer i ett gemensamt dokument?
-```
