@@ -124,6 +124,7 @@ SELECT dbo.ufn_GetFullName('Anna', 'Smith');
 1. Create a log table:
 
 ```sql
+DROP TABLE IF EXISTS dbo.EmployeeLog
 CREATE TABLE dbo.EmployeeLog
 (
     LogID INT IDENTITY PRIMARY KEY,
