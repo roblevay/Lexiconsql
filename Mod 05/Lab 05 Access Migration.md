@@ -28,6 +28,8 @@ If you don’t have an Access file, create a simple one with a single table like
 
 * `Employees` with fields: `ID`, `FirstName`, `LastName`, `HireDate`
 
+Or, you can download the file https://github.com/roblevay/Lexiconsql/AccessExample.accdb and save it to disk.
+
 ---
 
 # PART 1 — Open the Access database in SSMA
