@@ -145,4 +145,20 @@ SELECT EmployeeID, 'Deleted'
 FROM deleted;
 ```
 
-3. Test by deleting a row from `EmployeesTest` and verifying the log.
+3. Test by deleting a row from `EmployeesTest
+
+```sql
+DELETE FROM dbo.EmployeesTest WHERE EmployeeID = 2;
+```
+
+and verifying the log
+
+```sql
+SELECT * FROM dbo.EmployeeLog
+```
+Clean-up
+
+```sql
+DROP TRIGGER trg_LogDelete
+DROP TABLE dbo.EmployeeLog
+```
