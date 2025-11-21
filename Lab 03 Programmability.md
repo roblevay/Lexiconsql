@@ -26,6 +26,7 @@ FROM Person.Person;
 1. Create a simple table for testing:
 
 ```sql
+DROP TABLE IF EXISTS dbo.EmployeesTest
 CREATE TABLE dbo.EmployeesTest
 (
     EmployeeID INT,
@@ -34,10 +35,12 @@ CREATE TABLE dbo.EmployeesTest
 );
 ```
 
-2. Insert a row:
+2. Insert some rows:
 
 ```sql
 INSERT INTO dbo.EmployeesTest VALUES (1, 'Anna', 'Smith');
+INSERT INTO dbo.EmployeesTest VALUES (2, 'Dave', 'Olsen');
+INSERT INTO dbo.EmployeesTest VALUES (3, 'Mia', 'Jones');
 ```
 
 3. Update the row:
