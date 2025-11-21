@@ -12,6 +12,7 @@ These exercises use the **AdventureWorks** database in SQL Server.
 3. Run the query:
 
 ```sql
+USE Adventureworks
 SELECT TOP 10 *
 FROM Person.Person;
 ```
