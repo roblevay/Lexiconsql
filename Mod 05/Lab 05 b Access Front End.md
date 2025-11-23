@@ -118,6 +118,8 @@ SELECT TOP 20 * FROM AdventureWorks.Person.Person WHERE BusinessentityID=<Busine
 
 You will see the changes made in Access reflected in SQL Server instantly.
 
+Close Access without saving changes.
+
 
 ## What This Exercise Demonstrates
 
