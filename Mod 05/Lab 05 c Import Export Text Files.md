@@ -161,7 +161,7 @@ This will receive the imported data.
 
 ## Step 4: Choose destination (SQL Server)
 
-1. Destination: **SQL Server Native Client 11.0**
+1. Destination: **SQL Server Native Client 11.0** 
 2. Server name: your SQL Server
 3. Database: **AdventureWorks**
 4. Click **Next**.
@@ -172,7 +172,7 @@ This will receive the imported data.
 
 1. On **Select Source Tables and Views**:
 
-   * Destination: choose **dbo.ImportedEmployees**
+   * Destination: choose **dbo.ImportedEmployees** **IMPORTANT**
 2. Click **Edit Mappings…**:
 
    * Ensure all fields map correctly
