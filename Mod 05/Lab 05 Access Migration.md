@@ -37,12 +37,12 @@ Or, you can download the file **AccessExample.accdb** from  **https://github.com
 ## Step 1: Start SSMA for Access
 
 1. Open **SQL Server Migration Assistant for Access**.
-2. Click **File → New Project**.
+2. Click **Next**.
 3. Enter:
 
    * Name: `AccessMigrationDemo`
    * Location: anywhere
-   * Choose **SQL Server** as the migration target
+   * Choose **SQL Server 2019** as the migration target
 4. Click **OK**.
 
 ---
