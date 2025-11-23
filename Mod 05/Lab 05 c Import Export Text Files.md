@@ -6,7 +6,7 @@ In this exercise, you will:
 
 * **Export** data from SQL Server to a **text file** (CSV or TXT)
 * **Import** that file back into a SQL Server table
-* Use the built-in **SQL Server Import and Export Wizard**
+* Use the built-in **SQL Server Import and Export Wizard**. Click **Next**
 
 This demonstrates **“Importing and exporting data from text files.”**
 
