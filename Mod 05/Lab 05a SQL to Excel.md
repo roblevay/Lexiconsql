@@ -54,9 +54,9 @@ After connecting:
 
    * `DimProduct` or `FactInternetSales`.
 3. (Optional) Click **Transform Data** to open Power Query if you want to filter columns or rows.
-
-   * For example, keep only `ProductKey`, `EnglishProductName`, and `Color`.
-4. Click **Load** to import the data into Excel.
+   * Click **Choose Columns** and then **Choose Columns** 
+   * For example, keep only `ProductKey`, `EnglishProductName`, and `Color`. Click **OK**
+4. Click **Load and Close** to import the data into Excel.
 
 ---
 
