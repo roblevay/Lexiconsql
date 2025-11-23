@@ -112,7 +112,7 @@ This is the simplest possible "front-end interface".
 3. Open SQL Server Management Studio and run:
 
 ```sql
-SELECT TOP 20 * FROM Person.Person WHERE BusinessentityID=<Businessentityid>;
+SELECT TOP 20 * FROM AdventureWorks.Person.Person WHERE BusinessentityID=<Businessentityid>;
 ```
 
 You will see the changes made in Access reflected in SQL Server instantly.
