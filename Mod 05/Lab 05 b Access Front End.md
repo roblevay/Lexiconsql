@@ -108,7 +108,8 @@ This is the simplest possible "front-end interface".
 
    * Browsing people. Browse to the last record
    * Editing last names or first names
-   * Make not of the BusinessEntityID
+   * Make not of the <BusinessEntityID>
+   * Go to the next record to effect the change and then back again
 3. Open SQL Server Management Studio and run:
 
 ```sql
