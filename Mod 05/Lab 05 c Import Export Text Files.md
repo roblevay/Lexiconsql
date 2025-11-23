@@ -161,7 +161,7 @@ This will receive the imported data.
 
 ## Step 4: Choose destination (SQL Server)
 
-1. Destination: **SQL Server Native Client**
+1. Destination: **SQL Server Native Client 11.0**
 2. Server name: your SQL Server
 3. Database: **AdventureWorks**
 4. Click **Next**.
