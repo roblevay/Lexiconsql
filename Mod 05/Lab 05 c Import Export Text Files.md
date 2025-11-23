@@ -42,7 +42,7 @@ Before starting:
 
 1. On **Choose a Data Source**:
 
-   * Data source: **SQL Server Native Client**
+   * Data source: **SQL Server Native Client 11.0**
    * Server name: your SQL Server instance (`localhost`, `.`, etc.)
    * Authentication: Windows or SQL login
    * Database: **AdventureWorks**
