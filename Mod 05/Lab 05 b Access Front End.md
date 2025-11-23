@@ -54,11 +54,12 @@ You now have an empty Access database ready to connect.
 
    * Data source name: `AdventureWorksDS`
    * Server: your SQL Server (e.g. `North`)
-   * Next
+   * Click **Next**
    * Authentication: Windows or SQL Login
-   * Next
-   * Change the default database to **AdventureWorks**
-   * Finish → Test Connection → OK.
+   * Leave **Windows NT Authentication** selected and click **Next**
+   * Change the default database to **AdventureWorks** and click **Next**
+   * Click **Finish** 
+   * Click **Test Data Source** and then **OK**.
 
 7. Choose your new DSN (`AdventureWorksDS`) and click **OK**.
 
@@ -76,7 +77,7 @@ Access will now create **linked tables** with a little globe icon, meaning the d
 
 ## Step 3: Create a simple front-end form
 
-1. In the **Navigation Pane**, double.click on the linked table `Person`.
+1. In the **Navigation Pane**, double.click on the linked table `Person_Person`.
 2. In the ribbon, click **Create → Form**.
 
 Access automatically generates a full CRUD form:
@@ -98,29 +99,20 @@ This is the simplest possible "front-end interface".
    * Change the title (e.g. *“Person Browser”*)
    * Resize fields
    * Add labels or group boxes
-3. Add a search box:
-
-   * In Design View, add a **Text Box** and a **Button**
-   * Use the button wizard:
-
-     * Choose **Find Record**
-     * Connect to the LastName field
-
-Now users can search by name without knowing SQL.
-
 ---
 
 ## Step 5: Test the interface
 
-1. Switch to **Form View**.
+1. Switch to **Form View** by selecting View and then **Form View**.
 2. Test:
 
-   * Browsing people
-   * Editing last names or adding a new person
+   * Browsing people. Browse to the last record
+   * Editing last names or first names
+   * Make not of the BusinessEntityID
 3. Open SQL Server Management Studio and run:
 
 ```sql
-SELECT TOP 20 * FROM Person.Person ORDER BY BusinessEntityID DESC;
+SELECT TOP 20 * FROM Person.Person WHERE BusinessentityID=<Businessentityid>;
 ```
 
 You will see the changes made in Access reflected in SQL Server instantly.
