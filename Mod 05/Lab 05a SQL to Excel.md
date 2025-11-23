@@ -77,9 +77,14 @@ After connecting:
 
 If you prefer a specific dataset:
 
-1. In the **Navigator** window, instead of selecting a table, click **Advanced Options**.
+1. Repeat the first part of step 2 above to get to **SQL Server Database**
+2. In the **SQL Server database** dialog:
 
-2. Paste your own SQL query, for example:
+   * **Server**: enter your SQL Server name (e.g. `localhost`)
+   * **Database** (optional): type `AdventureWorksDW`
+   * Click **Advanced Options**.
+
+3. Paste your own SQL query, for example:
 
 ```sql
 SELECT TOP 100
