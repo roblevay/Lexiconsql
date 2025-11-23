@@ -44,7 +44,7 @@ Before starting:
 
    * Data source: **SQL Server Native Client 11.0**
    * Server name: your SQL Server instance (`localhost`, `.`, etc.)
-   * Authentication: Windows or SQL login
+   * Authentication: **Use Windows Authentication**
    * Database: **AdventureWorks**
 2. Click **Next**.
 
