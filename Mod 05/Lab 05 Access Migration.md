@@ -37,14 +37,15 @@ Or, you can download the file **AccessExample.accdb** from  **https://github.com
 ## Step 1: Start SSMA for Access
 
 1. Open **SQL Server Migration Assistant for Access**.
-2. Click **Next**.
-3. Enter:
+2. Click **Close** to exit the wizard.
+3. Click **File** and then **New Project**
+4. Enter:
 
    * Name: `AccessMigrationDemo`
    * Location: anywhere
    * Choose **SQL Server 2019** as the migration target
      
-4. Click **Next**
+5. Click **OK**
 
 
 ---
@@ -55,42 +56,41 @@ Or, you can download the file **AccessExample.accdb** from  **https://github.com
 2. Browse to your Access file, e.g.:
    `C:\Data\AccessExample.accdb`
 3. Click **Open**.
-
-Your Access tables now appear under **Add Access Databases**.
-
-4. Click **Next**
-5. Verify that the database **AccessExample** and the table **Employees** are selected (or whatever els you have used and click **Next**
+4. Verify that the database **AccessExample** and the table **Employees** are selected (or whatever else you have used and click **Next**
 
 ---
 
-# PART 2 — Connect SSMA to SQL Server
-
-## Step 1: Connect to the SQL Server instance
-
-1. In the **SQL Server Metadata Explorer**, click **Connect to SQL Server**.
-2. Fill in:
-
-   * Server name: `localhost` (or your instance)
-   * Authentication: **Windows Authentication**
-3. Click **Connect**.
-
-You should now see your SQL Server databases.
-
----
-
-## Step 2: Choose a target database
+## Step 3: Choose a target database
 
 You have two options:
 
 ### Option A — Create a new SQL Server database
 
-1. Right-click **Databases** → **Create New Database**.
+1. In **SQL Server Management Studio**, right-click **Databases** → **Create New Database**.
 2. Name it: `AccessMigratedDB`.
 3. Click **OK**.
 
 ### Option B — Use an existing SQL Server database
 
 (less common in demos)
+
+# PART 4 — Connect SSMA to SQL Server
+
+## Step 1: Connect to the SQL Server instance
+
+1. Click **Connect to SQL Server**.
+2. Fill in:
+   
+   * Server name: `localhost` (or your instance)
+   * Database name: **AccessMigratedDB**
+   * Authentication: **Windows Authentication**
+3. Click **Finish**.
+
+You should now see your SQL Server databases.
+
+---
+
+
 
 ---
 
@@ -103,19 +103,21 @@ You have two options:
 
 SSMA now converts Access objects into SQL Server equivalents.
 
-Converted tables appear under:
 
-* **SQL Server Metadata Explorer → AccessMigratedDB → Tables**
 
 ---
 
 ## Step 2: Load (migrate) data into SQL Server
 
 1. Right-click the Access database again.
-2. Choose **Migrate Data**.
+2. Choose **Convert,Load and Migrate**.
 3. SSMA now copies all rows from each Access table into SQL Server.
 
 You will see green checkmarks when successful.
+
+Converted tables appear under:
+
+* **SQL Server Metadata Explorer → AccessMigratedDB → Tables**
 
 ---
 
@@ -127,7 +129,7 @@ You will see green checkmarks when successful.
 2. Your Access tables should appear, e.g.:
 
 * `Employees`
-* `Departments`
+
 * or whatever existed in the Access file
 
 ---
@@ -141,7 +143,7 @@ You will see green checkmarks when successful.
 5. Run:
 
 ```sql
-SELECT TOP 20 * FROM dbo.Employees;
+SELECT TOP 20 * FROM AccessMigratedDB.dbo.Employees;
 ```
 
 You should see the same rows that existed in Access.
