@@ -92,8 +92,8 @@ FROM HumanResources.vEmployee;
 1. On **Configure Flat File Destination**:
 
    * Check **Preview** to ensure columns look correct
-   * Accept default delimiter (`,` comma)
-2. Click **OK**, then **Next**.
+   * Click **OK**
+2. Click **Next**.
 
 ---
 
