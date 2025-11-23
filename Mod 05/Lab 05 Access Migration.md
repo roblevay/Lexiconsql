@@ -43,7 +43,9 @@ Or, you can download the file **AccessExample.accdb** from  **https://github.com
    * Name: `AccessMigrationDemo`
    * Location: anywhere
    * Choose **SQL Server 2019** as the migration target
-4. Click **OK**.
+     
+4. Click **Next**
+
 
 ---
 
@@ -54,7 +56,10 @@ Or, you can download the file **AccessExample.accdb** from  **https://github.com
    `C:\Data\AccessExample.accdb`
 3. Click **Open**.
 
-Your Access tables now appear under **Access Metadata Explorer**.
+Your Access tables now appear under **Add Access Databases**.
+
+4. Click **Next**
+5. Verify that the database **AccessExample** and the table **Employees** are selected (or whatever els you have used and click **Next**
 
 ---
 
@@ -66,7 +71,7 @@ Your Access tables now appear under **Access Metadata Explorer**.
 2. Fill in:
 
    * Server name: `localhost` (or your instance)
-   * Authentication: Windows or SQL login
+   * Authentication: **Windows Authentication**
 3. Click **Connect**.
 
 You should now see your SQL Server databases.
