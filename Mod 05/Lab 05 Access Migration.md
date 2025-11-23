@@ -22,7 +22,7 @@ You need:
 2. **SQL Server** instance (e.g. `localhost`)
 3. A small Access database (for example `C:\Data\Employees.accdb`)
    – anything with a few tables works
-4. **SSMA for Access** installed (vilket du redan har)
+4. **SSMA for Access** installed (which you already have)
 
 If you don’t have an Access file, create a simple one with a single table like:
 
