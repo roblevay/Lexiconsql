@@ -51,7 +51,7 @@ Or, you can download the file **AccessExample.accdb** from  **https://github.com
 
 1. Click **Add Databases…** (upper left).
 2. Browse to your Access file, e.g.:
-   `C:\Data\Employees.accdb`
+   `C:\Data\AccessExample.accdb`
 3. Click **Open**.
 
 Your Access tables now appear under **Access Metadata Explorer**.
