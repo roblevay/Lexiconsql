@@ -20,7 +20,7 @@ ORDER BY d.CalendarYear;
 
 3. När resultatet visas i grid:
 
-   * Högerklicka i resultatet → välj **Copy with Headers**
+   * Högerklicka i den övre vänstra tomma rutan i resultatet → välj **Copy with Headers**
      (så att kolumnnamnen följer med).
 4. Nu har du en tvåkolumnslista i urklippet med:
 
