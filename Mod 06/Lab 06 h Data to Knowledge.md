@@ -12,22 +12,22 @@ The focus is on turning **data into insights**, not bara teknik.
 
 ### Step 1: Open Excel and Enable Power Pivot
 
-1. Open **Excel**.
-2. Go to **File → Options**.
-3. Select **Add-ins** in the left menu.
-4. At the bottom, next to **Manage**, choose **COM Add-ins** and click **Go…**.
-5. Tick **Microsoft Power Pivot for Excel**.
-6. Click **OK**.
+1. Open **Excel** and select **new blank workbook**
+3. Go to **File → Options**.
+4. Select **Add-ins** in the left menu.
+5. At the bottom, next to **Manage**, choose **COM Add-ins** and click **Go…**.
+6. Tick **Microsoft Power Pivot for Excel**.
+7. Click **OK**.
 
 You should now see a **Power Pivot** tab in the Excel ribbon.
 
 ---
 
-### Step 2: Create a New Workbook and Open Power Pivot
+### Step 2: Open Power Pivot
 
-1. In Excel, create a **new blank workbook**.
-2. Click the **Power Pivot** tab.
-3. Click **Manage** to open the Power Pivot window.
+
+1. Click the **Power Pivot** tab.
+2. Click **Manage** to open the Power Pivot window.
 
 ---
 
@@ -87,7 +87,7 @@ Excel switches back to the workbook and creates a PivotTable **based on the data
 In the **PivotTable Fields** pane (on the right in Excel):
 
 1. From **DimDate**, drag **`CalendarYear`** to **Rows**.
-2. From **DimProduct**, drag **`EnglishProductCategoryName`** to **Columns**.
+2. From **DimProduct**, drag **`Color`** to **Columns**.
 3. From **FactInternetSales**, drag **`SalesAmount`** to **Values**.
 
 You should now see a matrix showing **total Internet Sales** by **year** and **product category**.
@@ -111,15 +111,15 @@ This chart is part of the **BI functionality** that helps turn numbers into some
 Using the PivotTable and the chart, answer the following questions:
 
 1. Which **year** has the highest total Internet Sales?
-2. Which **product category** has the highest sales in the **latest year**?
-3. Is there any **category** that clearly grows faster than the others over time?
+2. Which **Color** has the highest sales in the **latest year**?
+3. Is there any **Color** that clearly grows faster than the others over time?
 4. Is there any **year** where sales **decrease** compared to the previous year?
 
 Write your answers as short bullet points in an empty area of the worksheet, for example:
 
 * The highest total sales occur in year **….**
-* The best-selling category in the latest year is **….**
-* Category **….** shows the strongest growth between year **A** and **B**.
+* The best-selling Color in the latest year is **….**
+* Color **….** shows the strongest growth between year **A** and **B**.
 * Sales decrease in year **….** compared to year **….**
 
 
