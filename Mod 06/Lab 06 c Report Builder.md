@@ -2,7 +2,7 @@
 
 In this exercise, you will:
 
-* Start **SQL Server Report Builder**
+* Start **Microsoft Report Builder**
 * Create a simple **table report** using the `AdventureWorksDW` data warehouse
 * Group and total sales by **year** and **product category**
 * Run and save the report
