@@ -21,14 +21,15 @@ Du behöver:
 
 ## 1. Skapa ett nytt Analysis Services-projekt
 
-1. Gå till **File → New → Project…**
-2. Sök efter: `Analysis Services`.
-3. Välj:
+1. Starta **Visual Studio 2026**. Clicka på **Continue without code**
+2. Gå till **File → New → Project…**
+3. Sök efter: `Analysis Services`.
+4. Välj:
    **Analysis Services Multidimensional and Data Mining Project**
-4. Klicka **Next**.
-5. Ge projektet ett namn, t.ex.
+5. Klicka **Next**.
+6. Ge projektet ett namn, t.ex.
    `AW_Cube_Demo`
-6. Klicka **Create**.
+7. Klicka **Create**.
 
 Du får nu ett tomt SSAS-projekt med noder som:
 
