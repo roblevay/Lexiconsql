@@ -100,7 +100,7 @@ In the **PivotTable Fields** pane (on the right in Excel):
    * Drag **`CalendarYear`** to **Rows**.
 2. Expand **DimProduct**:
 
-   * Drag **`EnglishProductCategoryName`** to **Columns**.
+   * Drag **`Color`** to **Columns**.
 3. Expand **FactInternetSales**:
 
    * Drag **`SalesAmount`** to **Values**.
