@@ -56,7 +56,7 @@ Du får nu ett tomt SSAS-projekt med noder som:
 
 Nu ser du din data source under **Data Sources**.
 
-7. Dubbelklicka på din Data Source och välj Impersonation Information. Välj Use a specific Windows user name and password. Fyll i student med rätt lösenord.
+7. Dubbelklicka på din Data Source och välj **Impersonation Information**. Välj **Use a specific Windows user name and password**. Fyll i **student** med rätt lösenord. Klicka på **OK**.
 
 ---
 
