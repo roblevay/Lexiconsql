@@ -37,7 +37,7 @@ You now have a report file (`.rdl`) saved locally.
 
 1. Open a **web browser**.
 2. Navigate to your SSRS web portal, for example:
-   `http://localhost/Reports`
+   `http://localhost/Reports` or `http://localhost:8080/reports` . If prompted log on with the student account
 3. You should see the **Reporting Services** web portal with folders and items.
 
 ---
