@@ -39,9 +39,9 @@ Du ska nu se en tabell som ungefär ser ut så här:
 
 | SalesYear | SalesAmount |
 | --------: | ----------: |
-|      2005 |           … |
-|      2006 |           … |
-|      2007 |           … |
+|      2010 |           … |
+|      2011 |           … |
+|      2012 |           … |
 |         … |           … |
 
 4. Markera hela området (båda kolumnerna inklusive rubrikerna).
