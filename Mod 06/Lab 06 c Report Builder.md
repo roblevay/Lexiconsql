@@ -150,7 +150,7 @@ If you want to show how quickly you can add interactivity:
 
 1. Go back to **Design** view.
 
-2. Right-click the **dataset** in the **Report Data** pane → **Dataset Properties**.
+2. Right-click the **dataset** in the **Report Data** pane to the left and select **Dataset Properties**.
 
 3. Edit the query to filter by year:
 
