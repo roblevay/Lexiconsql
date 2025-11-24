@@ -25,7 +25,7 @@ Du behöver:
 2. Gå till **File → New → Project…**
 3. Sök efter: `Analysis Services`.
 4. Välj:
-   **Analysis Services Multidimensional and Data Mining Project**
+   **Analysis Services Multidimensional Project**
 5. Klicka **Next**.
 6. Ge projektet ett namn, t.ex.
    `AW_Cube_Demo`
