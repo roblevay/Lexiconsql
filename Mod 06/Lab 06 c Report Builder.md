@@ -112,10 +112,7 @@ You now have a dataset ready for a quick report.
    * Choose **Stepped** or **Block** layout (either is fine for a simple demo).
    * Optionally select **Enable drilldown** if you want categories to expand under years.
 2. Click **Next**.
-3. On the **Choose a Style** page:
-
-   * Select any style you like (e.g. **Corporate**, **Generic**).
-4. Click **Finish**.
+3. Click **Finish**.
 
 Report Builder generates a table report design based on your choices. You may have to look for the report in the Task Bar.
 
