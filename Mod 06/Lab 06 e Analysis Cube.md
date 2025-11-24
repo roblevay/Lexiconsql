@@ -17,25 +17,9 @@ Du behöver:
 3. **Visual Studio 2022/2026** med tillägget:
    **Microsoft Analysis Services Projects 2022+** installerat.
 
----
 
-## 1. Installera Analysis Services Projects i Visual Studio
 
-Om mallen för Analysis Services-projekt inte syns:
-
-1. Öppna **Visual Studio**.
-2. Gå till **Extensions → Manage Extensions**.
-3. Sök efter:
-   `Microsoft Analysis Services Projects 2022+`
-4. Klicka **Install**.
-5. Starta om Visual Studio när den ber om det.
-
-Efter detta ska projekttypen
-**“Analysis Services Multidimensional and Data Mining Project”** finnas när du skapar nya projekt.
-
----
-
-## 2. Skapa ett nytt Analysis Services-projekt
+## 1. Skapa ett nytt Analysis Services-projekt
 
 1. Gå till **File → New → Project…**
 2. Sök efter: `Analysis Services`.
@@ -56,7 +40,7 @@ Du får nu ett tomt SSAS-projekt med noder som:
 
 ---
 
-## 3. Skapa en Data Source mot AdventureWorksDW
+## 2. Skapa en Data Source mot AdventureWorksDW
 
 1. I **Solution Explorer**:
    högerklicka på **Data Sources** → välj **New Data Source…**
@@ -73,7 +57,7 @@ Nu ser du din data source under **Data Sources**.
 
 ---
 
-## 4. Skapa en Data Source View (DSV)
+## 3. Skapa en Data Source View (DSV)
 
 Vi bygger en minimal kub på:
 
@@ -93,7 +77,7 @@ Du ser nu ett litet stjärnschema med `FactInternetSales` kopplad till `DimDate`
 
 ---
 
-## 5. Skapa kuben (Cube Wizard)
+## 4. Skapa kuben (Cube Wizard)
 
 Nu skapar vi en enkel kub med:
 
@@ -123,7 +107,7 @@ Nu har du en kubdefintion under **Cubes**.
 
 ---
 
-## 6. Sätt impersonation-läge för datakällan (vid behov)
+## 5. Sätt impersonation-läge för datakällan (vid behov)
 
 När du försöker processa kuben första gången får du ofta ett fel om **impersonation mode**.
 Det betyder att SSAS inte vet *under vilket konto* den ska ansluta till SQL Server.
@@ -147,7 +131,7 @@ Detta gör att Analysis Services kan ansluta till `AdventureWorksDW` med ditt ko
 
 ---
 
-## 7. Processa (bygga) kuben
+## 6. Processa (bygga) kuben
 
 1. I **Solution Explorer**:
    högerklicka på kuben under **Cubes** → välj **Process…**
@@ -166,7 +150,7 @@ Kuben är nu deployad och processad på SSAS-servern.
 
 ---
 
-## 8. Browsa kuben – visa aggregation per datum
+## 7. Browsa kuben – visa aggregation per datum
 
 Nu kommer själva demon: att kuben kan **summera försäljning per datum**.
 
@@ -207,17 +191,17 @@ Detta är redan en fullt fungerande demo av att:
 
 ---
 
-## 9. Skapa en hierarki: År → Datum (CalendarYear)
+## 8. Skapa en hierarki: År → Datum (CalendarYear)
 
 För att även kunna visa försäljning **per år** (och drilla ned till datum) skapar vi en hierarki i datumdimensionen.
 
-### 9.1 Öppna datumdimensionen
+### 8.1 Öppna datumdimensionen
 
 1. I **Solution Explorer**, under **Dimensions**:
 
    * Dubbelklicka på datumdimensionen (t.ex. **Date** eller **Dim Date**).
 
-### 9.2 Skapa en hierarki med CalendarYear och DateKey
+### 8.2 Skapa en hierarki med CalendarYear och DateKey
 
 1. I rutan **Attributes** (till vänster):
 
@@ -236,7 +220,7 @@ För att även kunna visa försäljning **per år** (och drilla ned till datum) 
 
 4. Spara dimensionen (**Ctrl+S**).
 
-### 9.3 Processa om dimension och kub
+### 8.3 Processa om dimension och kub
 
 För att hierarkin ska bli tillgänglig i kuben behöver vi processa:
 
@@ -245,7 +229,7 @@ För att hierarkin ska bli tillgänglig i kuben behöver vi processa:
 
 ---
 
-## 10. Browsa kuben med årshierarkin
+## 9. Browsa kuben med årshierarkin
 
 Nu kan vi visa **försäljning per år** och drilla ned till datum.
 
