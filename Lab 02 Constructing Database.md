@@ -87,7 +87,7 @@ CREATE TABLE dbo.TrainingEmployees
    * Click **Add**.
    * Set **Type** to *index*.
    * Name it: `IX_TrainingEmployees_EmployeeID`.
-5. Click **OK** and save the table by clicking on the diskette symbol.
+5. Click **Close** and save the table by clicking on the diskette symbol.
 6. Expand **Indexes** under the table to verify the new index.
 
 ---
