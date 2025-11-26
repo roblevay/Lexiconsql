@@ -131,8 +131,8 @@ WITH FORMAT, INIT, COMPRESSION;
 RESTORE DATABASE AWDWCopyFromBackup
 FROM DISK = 'C:\sqlbackups\AdventureWorksDW.bak'
 WITH 
-    MOVE 'AdventureWorksDW_Data' TO 'C:\Dest\AWDWCopyFromBackup.mdf',
-    MOVE 'AdventureWorksDW_Log' TO 'C:\Dest\AWDWCopyFromBackup.ldf',
+    MOVE 'AdventureWorksDW2016_Data' TO 'C:\Dest\AWDWCopyFromBackup.mdf',
+    MOVE 'AdventureWorksDW2016_Log' TO 'C:\Dest\AWDWCopyFromBackup.ldf',
     REPLACE;
 ```
 
