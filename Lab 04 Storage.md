@@ -31,79 +31,11 @@ LOG ON
   SIZE = 20MB, FILEGROWTH = 20MB, MAXSIZE = 20GB);
 ```
 
----
-
-## Step 2 – Move `tempdb`
-
-Skapa en ny datafil i tempdb:
-
-```sql
-USE master;
-GO
-ALTER DATABASE tempdb 
-ADD FILE (
-    NAME = temp3, 
-    FILENAME = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\DATA\tempdb_mssql_3.ndf', 
-    SIZE = 64MB, 
-    FILEGROWTH = 64MB
-);
-USE master;
-GO
-ALTER DATABASE tempdb 
-ADD FILE (
-    NAME = temp4, 
-    FILENAME = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\DATA\tempdb_mssql_4.ndf', 
-    SIZE = 64MB, 
-    FILEGROWTH = 64MB
-);
 
 
-GO
-```
-
-### Instructions
-
-Move the `tempdb` files to the `C:\DbFiles\MSSQLSERVER` folder.
-
-> ⚠️ There is no GUI in SSMS for this. Use `ALTER DATABASE ... MODIFY FILE` for each file.  
-> Run `SELECT * FROM tempdb.sys.database_files` to inspect current files.
-
-Restart SQL Server to verify the files are created in the new location. Delete the old files.
-
-🔗 [Managing tempdb – Karaszi](https://sqlblog.karaszi.com/managing-tempdb/)
-
----
-
-### Answer Suggestion
-
-```sql
--- Check current files
-SELECT name, physical_name FROM tempdb.sys.database_files;
-
--- Template from master
-SELECT name, physical_name FROM master.sys.master_files WHERE DB_NAME(database_id) = 'tempdb';
-
--- Move files (example with 4 data files and 1 log)
-ALTER DATABASE tempdb MODIFY FILE (NAME = tempdev, FILENAME = 'C:\DbFiles\MsSqlServer\tempdb.mdf');
-ALTER DATABASE tempdb MODIFY FILE (NAME = temp3, FILENAME = 'C:\DbFiles\MsSqlServer\tempdb_mssql_3.ndf');
-ALTER DATABASE tempdb MODIFY FILE (NAME = temp4, FILENAME = 'C:\DbFiles\MsSqlServer\tempdb_mssql_4.ndf');
-ALTER DATABASE tempdb MODIFY FILE (NAME = templog, FILENAME = 'C:\DbFiles\MsSqlServer\templog.ldf');
-
-```
-Run the command
 
 
-```sql
--- Check current files
-SELECT name, physical_name FROM tempdb.sys.database_files;
-```
-
-The paths are changed. Check in the file system. The files have not been created.
-
-Restart SQL Server. Verify the files are created in the new location. Delete the old files.
----
-
-## Step 3 – Detach and Attach a Database
+## Step 2 – Detach and Attach a Database
 
 ### Instructions
 
