@@ -2,8 +2,13 @@
 
 ## Step 1 – Run DBCC CHECKDB
 
-DBCC CHECKDB ('AdventureWorks');
+Run DBCC CHECKDB on Adventureworks
 
+```sql
+DBCC CHECKDB ('AdventureWorks');
+```
+
+Try some other related DBCC CHECKDB commands!
 
 # Exercise 2: SQL Server Index Fragmentation & Statistics Exercise
 
