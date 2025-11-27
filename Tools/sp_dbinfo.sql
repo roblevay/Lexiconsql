@@ -1,3 +1,5 @@
+--https://karaszi.com/spdbinfo-database-space-usage-information
+
 USE master
 GO
 
