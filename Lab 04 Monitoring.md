@@ -233,6 +233,89 @@ Go back to Window 1. The query will be captured.If not, try again!
 
 ---
 
+## 6. `sp_DBInfo` – Database Space Info by Tibor Karaszi
+
+### 🔽 Download
+Go to:  
+[https://karaszi.com/spdbinfo-database-space-usage-information](https://karaszi.com/spdbinfo-database-space-usage-information) (open in a new window)
+
+Click sp_dbinfo.sql 
+
+### 📦 Install
+1. Copy the script and paste it in SSMS
+2. Run it in the database where you want the procedure (commonly `master`).
+
+### ▶️ Usage
+```sql
+EXEC sp_DBInfo;
+```
+
+### 🧾 Output
+Shows space usage at file and object level:
+
+- DB name, file sizes, free space
+- Space used per filegroup and per object (e.g. table)
+- Warnings for possible cleanup
+
+> Very useful for tracking growth or troubleshooting large tables.
+
+
+## 7. `sp_tableinfoo` – Table Info
+
+### 🔽 Download
+Go to:  
+https://karaszi.com/sptableinfo-list-tables-and-space-usage (open in a new window)
+
+Click sp_tableinfo.sql 
+
+### 📦 Install
+1. Copy the script and paste it in SSMS
+2. Run it in the database where you want the procedure (commonly `master`).
+
+### ▶️ Usage
+```sql
+EXEC sp_tableinfo;
+```
+
+### 🧾 Output
+
+The procedure returns a row for each table in current database (unless table spread over several filegroups, using several indexes or partitions; if so then several rows are returned). It returns schema name, table name, number of rows, size in both MB and pages and file group.
+
+---
+
+Självklart, här är en motsvarande sektion för `sp_indexinfo` i samma stil:
+
+---
+
+## 8. `sp_indexinfo` – Index Info
+
+### 🔽 Download
+
+Go to:
+https://karaszi.com/spindexinfo-enhanced-index-information-procedure (open in a new window)
+
+Click `sp_indexinfo.sql`
+
+### 📦 Install
+
+1. Copy the script and paste it in SSMS
+2. Run it in the database where you want the procedure (commonly `master`)
+
+### ▶️ Usage
+
+```sql
+EXEC sp_indexinfo;
+```
+
+### 🧾 Output
+
+The procedure lists all indexes in the current database, with detailed attributes:
+table name, index name, type, uniqueness, number of rows, size in MB, fragmentation, included columns, and more.
+Superb for index reviews and cleanup decisions.
+
+---
+
+
 ## 🧠 Tips
 
 * Run these tools from a DBA or admin database to avoid cluttering production databases
