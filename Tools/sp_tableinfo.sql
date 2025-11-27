@@ -1,3 +1,6 @@
+--https://karaszi.com/sptableinfo-list-tables-and-space-usage
+
+
 USE master
 GO
 IF OBJECT_ID('sp_tableinfo') IS NOT NULL DROP PROC sp_tableinfo
