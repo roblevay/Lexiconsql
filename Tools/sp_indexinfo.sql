@@ -1,3 +1,6 @@
+--https://karaszi.com/spindexinfo-enhanced-index-information-procedure
+
+
 USE master 
 GO 
 IF OBJECT_ID('sp_indexinfo') IS NOT NULL DROP PROC sp_indexinfo 
