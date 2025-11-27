@@ -9,7 +9,7 @@ These exercises use **SQL Server Management Studio (SSMS)** and the **AdventureW
 
 1. Open SSMS and expand **AdventureWorks → Tables**.
 2. Right-click any table with indexes, e.g. **Person.Person**.
-3. Select **Storage → Manage Indexes and Keys**.
+3. Right-click an index
 4. Choose **Reorganize** or **Rebuild** and apply.
 
 ---
